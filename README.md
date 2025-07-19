@@ -89,25 +89,25 @@ const char* BASE_URL = "http://192.168.1.68:3000/api";
 
 ## Features
 
-### 🔐 Secure Authentication
+### Secure Authentication
 
 - **Device Registration**: Automatic registration using MAC address
 - **JWT Token Management**: Access and refresh token handling
 - **Automatic Re-authentication**: Handles token expiration gracefully
 
-### 📊 Sensor Data Collection
+### Sensor Data Collection
 
 - **Environmental Monitoring**: Temperature, humidity, and distance measurements
 - **Data Validation**: Error handling for sensor failures
 - **Real-time Transmission**: 10-second data intervals
 
-### 🌐 Network Management
+### Network Management
 
 - **WiFi Auto-reconnection**: Handles network disconnections
 - **HTTP Error Handling**: Robust API communication
 - **Connection Status Monitoring**: Real-time network status
 
-### 🔧 Device Management
+### Device Management
 
 - **Runtime Tracking**: System uptime monitoring
 - **CPU Temperature**: Internal temperature sensing
