@@ -1,3 +1,4 @@
+// FINAL ESP32 SENSOR CODE WITH TOKEN AUTH AND FIXED PAYLOAD STRUCTURE
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
@@ -5,7 +6,6 @@
 
 #define DHTPIN 15
 #define DHTTYPE DHT22
-// #define DHTTYPE DHT11 For DHT11
 #define TRIG_PIN 4
 #define ECHO_PIN 2
 #define DEVICE_NAME "ESP32-RainGauge"
@@ -147,8 +147,8 @@ void sendData() {
   }
 
   StaticJsonDocument<256> doc;
-  doc["total_height"] = String(distance, 1);
-  doc["current_height"] = String(distance, 1); 
+  doc["total_height"] = 15;
+  doc["current_height"] = String(distance, 1);
   doc["humidity"] = String(humidity, 1);
   doc["temperature"] = String(temperature, 1);
   doc["cpu_temp"] = String(cpuTemp, 1);
